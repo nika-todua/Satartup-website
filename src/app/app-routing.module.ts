@@ -6,10 +6,10 @@ import { ServicespageComponent } from './servicespage/servicespage.component';
 import { ContactpageComponent } from './contactpage/contactpage.component';
 
 const routes: Routes = [
-  { path: '', component: HomepageComponent },
-  { path: '/portfolio', component: PortfoliopageComponent },
-  { path: '/services', component: ServicespageComponent },
-  { path: '/contact', component: ContactpageComponent}
+  { path: '', redirectTo: '/hero', component: HomepageComponent },
+  { path: 'portfolio', component: PortfoliopageComponent },
+  { path: 'services', component: ServicespageComponent },
+  { path: 'contact', component: ContactpageComponent}
 ];
 
 @NgModule({
