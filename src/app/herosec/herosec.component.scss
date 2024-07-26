@@ -1,0 +1,162 @@
+@import "../../variables.scss";
+
+.hero{
+    width: 100%;
+    height: 586px;
+    background-color: $green-100;
+    
+    &_inner{
+        padding-top: 125px;
+        max-width: 1180.28px;
+        margin: 0 auto;
+        width: 90%;
+        height: 100%;
+        
+        
+        &_cont{
+            width: 100%;
+            height: 378.13px;
+            
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .text_cont{
+                max-width: 416px !important;
+            }
+            .img_cont{
+                width: 645px;
+                min-width: 512.8px;
+                height: auto;
+            }
+            aside{
+                p{
+                    font-family: $worksans-font;
+                    font-weight: $font-bold;
+                    font-size: 16px;
+                    color: $white-100;
+                }
+                h1{
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    font-family: $crimson-text-font;
+                    font-size: 40px;
+                    font-weight: $font-bold;
+                    color: $white-100;
+                }
+                .bio{
+                    margin-bottom: 25px;
+                    font-family: $worksans-font;
+                    font-size: 16px;
+                    font-weight: $font-regular;
+                    color: $white-75;
+                }
+                button{
+                    width: 170px;
+                    height: 48px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: $white-100;
+                    color: $dark-100;
+                    font-family: $worksans-font;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+
+                svg{
+                    width: 100%;
+                    display: flex;
+
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 990px) {
+    .hero{
+        width: 100%;
+        height: auto;
+        
+        &_inner{
+            padding-top: 125px;
+            padding-bottom: 40.39px;
+            
+            &_cont{
+                height: auto;
+                gap: 30px;
+                justify-content: center;
+                flex-wrap: wrap-reverse;
+    
+                .text_cont{
+                    max-width: 416px !important;
+                    text-align: left;
+                }
+                .img_cont{
+                    width: 645px;
+                    min-width: 512.8px;
+                    height: auto;
+                }
+                aside{
+                    h1{
+                        font-size: 36px;
+                    }
+                    button{
+                        width: 170px;
+                        height: 48px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 768px){
+    .hero{
+        &_inner{
+            padding-top: 87px;
+            
+            &_cont{
+                height: auto;
+                gap: 30px;
+                justify-content: center;
+                flex-wrap: wrap-reverse;
+    
+                .text_cont{
+                    width: 100%;
+                    max-width: none !important;
+                }
+                .img_cont{
+                    width: 645px;
+                    min-width: 0px;
+                    height: auto;
+                }
+                aside{
+                    h1{
+                        font-size: 36px;
+                    }
+                    button{
+                        width: 170px;
+                        height: 48px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 510px){
+    .hero{
+        &_inner{
+            &_cont{
+                aside{
+                    h1{
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        font-size: 32px;
+                    }
+                }
+            }
+        }
+    }
+}

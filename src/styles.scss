@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.no-scroll{
+    overflow: hidden;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 999;
+}
+footer{
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,164 @@
+@import "../../variables.scss";
+
+.about {
+  width: 100%;
+  height: auto;
+  background-color: $white-100;
+
+  &_inner {
+    margin: 0 auto;
+    max-width: 1180px;
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 73.57px;
+
+    &_cont {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+
+      aside {
+        width: 600px;
+
+        svg {
+          display: block;
+        }
+      }
+
+      .textSec {
+        width: 470px;
+
+        h2 {
+          font-family: $crimson-text-font;
+          font-weight: $font-bold;
+          font-size: 40px;
+          color: $dark-100;
+        }
+
+        p {
+          font-family: $worksans-font;
+          font-weight: $font-regular;
+          font-size: 15px;
+          color: $dark-50;
+        }
+
+        button {
+          margin-top: 16px;
+          width: 170px;
+          height: 48px;
+          background-color: $dark-100;
+          border-radius: 5px;
+
+          font-family: $worksans-font;
+          font-weight: $font-regular;
+          font-size: 20px;
+          border: none;
+          color: $white-100;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 990px) {
+  .about {
+    &_inner {
+      gap: 73.57px;
+
+      &_cont {
+
+        gap: 10px;
+
+        aside {
+          width: 400px;
+
+          svg {
+            width: 100%;
+            display: block;
+          }
+        }
+
+        .textSec {
+          width: 435px;
+
+          h2 {
+            font-size: 32px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .about {
+    &_inner {
+      gap: 60.12px;
+
+      &_cont {
+        flex-wrap: wrap;
+        gap: 10px;
+
+        aside {
+          width: 100%;
+
+          svg {
+            width: 100%;
+            display: block;
+          }
+        }
+
+        .textSec {
+          width: 100%;
+
+          h2 {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    &_inner {
+      &_cont {
+        .textSec {
+          h2 {
+            font-size: 28px;
+          }
+
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 414px) {
+    .about {
+      &_inner {
+        &_cont {
+          .textSec {
+            h2 {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+  

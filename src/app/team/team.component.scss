@@ -1,0 +1,148 @@
+@import "../../variables.scss";
+
+.team {
+  padding-top: 102.27px;
+  padding-bottom: 54px;
+  width: 100%;
+  height: auto;
+  background-color: $white-100;
+
+  &_inner {
+    margin: 0 auto;
+    max-width: 1180px;
+    width: 90%;
+    
+    &_title_box {
+      margin: 0 auto;
+      width: fit-content;
+      text-align: center;
+
+      .top_title {
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        font-family: $worksans-font;
+        font-weight: $font-bold;
+        font-size: 16px;
+        color: $green-100;
+      }
+
+      h2 {
+        font-family: $crimson-text-font;
+        font-weight: $font-bold;
+        font-size: 40px;
+        color: $dark-100;
+      }
+
+      p {
+        margin-top: 16px;
+        max-width: 404px;
+        font-family: $worksans-font;
+        font-weight: $font-regular;
+        font-size: 20px;
+        color: #000;
+      }
+    }
+
+    ul {
+      margin-top: 45px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style-type: none;
+
+      .card {
+        position: relative;
+        width: 279px;
+        height: 299px;
+        border-radius: 5px;
+        box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.25);
+        background-color: $white-100;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .img_box {
+          width: 175px;
+          height: 175px;
+          margin: 0 auto;
+
+          svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+          }
+        }
+
+        .text_box {
+          margin-top: 19px;
+          width: 202px;
+          height: auto;
+
+          .card-name {
+            margin-bottom: 17px;
+            font-family: $crimson-text-font;
+            font-weight: $font-bold;
+            font-size: 24px;
+            color: $dark-100;
+          }
+
+          .profercion {
+            text-transform: uppercase;
+            font-family: $worksans-font;
+            font-weight: $font-regular;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    button {
+      display: block;
+      margin: 45px auto 0 auto;
+      width: 170px;
+      height: 48px;
+      background-color: $dark-100;
+      border-radius: 5px;
+      font-family: $worksans-font;
+      color: $white-100;
+      font-weight: $font-regular;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 655px) {
+  .team {
+    &_inner {
+      &_title_box {
+        margin: 0 auto;
+        width: fit-content;
+        text-align: center;
+
+        .top_title {
+          margin-bottom: 0px;
+          font-size: 16px;
+        }
+
+        h2 {
+          margin-top: 12px;
+          font-size: 34px;
+        }
+
+        p {
+          margin-top: 11px;
+          max-width: 411px;
+          font-size: 18px;
+        }
+      }
+
+
+    }
+  }
+
+}

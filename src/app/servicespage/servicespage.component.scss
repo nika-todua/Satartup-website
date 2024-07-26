@@ -1,0 +1,174 @@
+@import "../../variables.scss";
+
+.services_main {
+  padding-top: 158px;
+  padding-bottom: 135px;
+  width: 100%;
+  min-height: auto;
+  background-color: $white-100;
+
+  .title_box {
+    margin: 0 auto;
+    width: 411px;
+    height: 162px;
+    text-align: center;
+    overflow: hidden;
+
+    .top_title {
+      text-transform: uppercase;
+      font-family: $worksans-font;
+      font-weight: $font-bold;
+      font-size: 16px;
+      color: $green-100;
+    }
+
+    h2 {
+      margin-top: 10px;
+      font-family: $crimson-text-font;
+      font-weight: $font-bold;
+      font-size: 40px;
+      color: #000;
+    }
+
+    p {
+      margin-top: 10px;
+      font-family: $worksans-font;
+      font-weight: $font-regular;
+      font-size: 20px;
+      color: #000;
+    }
+  }
+
+  .card_wrapper {
+    margin: 78px auto 0 auto;
+    width: 90%;
+    max-width: 1227px;
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 45px;
+    row-gap: 50px;
+    justify-content: center;
+
+    .card {
+      padding: 46px 30px;
+      width: 339px;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.25);
+      background-color: $white-100;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .top_title {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+        font-family: $worksans-font;
+        font-weight: $font-regular;
+        font-size: 15px;
+        color: #000;
+      }
+
+      .cash {
+        width: 100%;
+        text-align: center;
+        font-family: $worksans-font;
+        font-weight: $font-bold;
+        font-size: 40px;
+        color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          margin-left: 9px;
+          font-weight: $font-regular;
+          font-size: 15px;
+          color: $dark-50;
+        }
+      }
+
+      .info {
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+        font-family: $worksans-font;
+        font-weight: $font-regular;
+        font-size: 15px;
+        color: $dark-50;
+      }
+
+      ul {
+        margin-top: 52px;
+        width: 100%;
+        display: flex;
+        gap: 11px;
+        flex-direction: column;
+
+        li {
+          display: flex;
+          gap: 11px;
+          align-items: center;
+          justify-content: start;
+          list-style-type: none;
+
+          font-family: $worksans-font;
+          font-weight: $font-regular;
+          font-size: 15px;
+          color: $dark-100;
+        }
+      }
+
+      .btn {
+        margin-top: 45px;
+        width: 170px;
+        height: 48px;
+        border-radius: 5px;
+        border: none;
+        background-color: $dark-100;
+
+        font-family: $worksans-font;
+        font-weight: $font-regular;
+        font-size: 20px;
+        color: $white-100;
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .services_main {
+    padding-top: 104px;
+    padding-bottom: 59px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .services_main {
+    .title_box {
+      width: 90%;
+      max-width: 401px;
+      height: auto;
+
+      .top_title {
+        font-size: 16px;
+      }
+
+      h2 {
+        margin-top: 8px;
+        font-size: 34px;
+      }
+
+      p {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #000;
+      }
+    }
+  }
+}

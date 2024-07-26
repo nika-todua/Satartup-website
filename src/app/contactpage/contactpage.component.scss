@@ -1,0 +1,201 @@
+@import "../../variables.scss";
+
+.contact_main {
+  width: 100%;
+  height: auto;
+  background-color: $white-100;
+
+  &_inner {
+    padding-top: 153px;
+    padding-bottom: 93px;
+    margin: 0 auto;
+    max-width: 1180px;
+    width: 90%;
+    height: 100%;
+
+    .title_box {
+      margin: 0 auto;
+      width: 411px;
+      height: 162px;
+      text-align: center;
+
+      .top_title {
+        text-transform: uppercase;
+        font-family: $worksans-font;
+        font-weight: $font-bold;
+        font-size: 16px;
+        color: $green-100;
+      }
+
+      h2 {  
+        font-family: $crimson-text-font;
+        font-weight: $font-bold;
+        font-size: 40px;
+        color: #000;
+      }
+
+      p {
+        margin-top: 10px;
+        font-family: $worksans-font;
+        font-weight: $font-regular;
+        font-size: 20px;
+        color: #000;
+      }
+    }
+
+    .cont {
+      margin-top: 67px;
+      width: 100%;
+      height: auto;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .forms_cont {
+        margin-right: 5px;
+        max-width: 575px;
+        width: 50%;
+
+        form {
+          width: 100%;
+
+          label {
+            font-family: $worksans-font;
+            font-weight: $font-regular;
+            font-size: 20px;
+            color: #000;
+          }
+
+          input,
+          textarea {
+            margin-top: 16px;
+            padding: 5px;
+            width: 100%;
+            outline: none;
+            background-color: #EEEEEE;
+            border-radius: 5px;
+            border: 1px solid #000;
+            font-family: $worksans-font;
+            font-weight: $font-regular;
+            font-size: 18px;
+          }
+
+          input {
+            height: 38px;
+            margin-bottom: 21px;
+          }
+
+          textarea {
+            height: 75px;
+            resize: none;
+          }
+
+          button {
+            margin-top: 21px;
+            width: 100%;
+            height: 48px;
+            border-radius: 5px;
+            background-color: $dark-100;
+            border: none;
+
+            font-family: $worksans-font;
+            font-weight: $font-regular;
+            font-size: 20px;
+            color: $white-100;
+          }
+        }
+      }
+
+      .map_cont {
+        width: 50%;
+        max-width: 575px;
+        height: auto;
+
+        svg {
+          width: 100%;
+          height: 100%;
+          display: flex;
+        }
+      }
+    }
+
+
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .contact_main {
+    &_inner {
+
+      .cont {
+        margin-top: 67px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: space-between;
+
+        .forms_cont {
+          margin-right: 5px;
+          max-width: none;
+          width: 100%;
+        }
+
+        .map_cont {
+          margin-bottom: 21px;
+          width: 100%;
+          max-width: none;
+
+          svg {
+            width: 100%;
+            height: 100%;
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .contact_main {
+    &_inner {
+      padding-top: 104px;
+      padding-bottom: 59px;
+    }
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .contact_main {
+
+    &_inner {
+      .title_box {
+        width: 90%;
+        max-width: 401px;
+        height: auto;
+
+        .top_title {
+          font-size: 16px;
+        }
+
+        h2 {
+          margin-top: 8px;
+          font-size: 34px;
+        }
+
+        p {
+          margin-top: 10px;
+          font-size: 16px;
+          color: #000;
+        }
+      }
+    }
+  }
+}

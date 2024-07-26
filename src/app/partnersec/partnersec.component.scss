@@ -1,0 +1,119 @@
+@import "../../variables.scss";
+
+.partnership {
+  width: 100%;
+  height: auto;
+  background-color: $white-100;
+
+  &_inner {
+    position: relative;
+    max-width: 1158.98px;
+    margin: 60px auto 73px auto;
+    width: 90%;
+    height: 100%;
+
+    &_cont {
+      width: 100%;
+      height: auto;
+
+      .topText {
+        width: fit-content;
+        margin: 0 auto;
+        text-align: center;
+
+        .sec_title {
+            letter-spacing: 5px;
+          text-transform: uppercase;
+          font-family: $worksans-font;
+          font-size: 16px;
+          font-weight: $font-bold;
+          color: $green-100;
+        }
+
+        h2 {
+          margin-top: 16px;
+          font-family: $crimson-text-font;
+          font-weight: $font-bold;
+          font-size: 40px;
+          color: #000;
+        }
+
+        p {
+          margin-top: 16px;
+          max-width: 411px;
+          font-family: $worksans-font;
+          font-weight: $font-regular;
+          font-size: 20px;
+          color: #000;
+        }
+      }
+
+      ul {
+        margin-top: 55px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        align-items: center;
+        justify-content: space-between;
+
+        li {
+          margin: 0 auto;
+          list-style-type: none;
+
+          svg {
+            display: block;
+          }
+        }
+      }
+
+      button {
+        position: relative;
+        margin: 55px auto 0 auto;
+        display: block;
+        width: 170px;
+        height: 48px;
+        background-color: $dark-100;
+        border-radius: 5px;
+        font-family: $worksans-font;
+        color: $white-100;
+        font-weight: $font-regular;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 655px) {
+  .partnership {
+    &_inner {
+
+      &_cont {
+        .topText {
+
+          .sec_title {
+            font-family: $worksans-font;
+            font-size: 16px;
+            font-weight: $font-bold;
+            color: $green-100;
+          }
+
+          h2 {
+            margin-top: 12px;
+            font-size: 34px;
+          }
+
+          p {
+            margin-top: 11px;
+            max-width: 411px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+}

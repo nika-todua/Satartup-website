@@ -1,0 +1,117 @@
+@import "../../variables.scss";
+
+.project_main {
+  padding-top: 153px;
+  padding-bottom: 99px;
+  width: 100%;
+  height: auto;
+  background-color: $white-100;
+}
+
+.title_box {
+  margin: 0 auto;
+  width: 411px;
+  height: 162px;
+  text-align: center;
+
+  .top_title {
+    text-transform: uppercase;
+    font-family: $worksans-font;
+    font-weight: $font-bold;
+    font-size: 16px;
+    color: $green-100;
+  }
+
+  h2 {
+    margin-top: 10px;
+    font-family: $crimson-text-font;
+    font-weight: $font-bold;
+    font-size: 40px;
+    color: #000;
+  }
+
+  p {
+    margin-top: 10px;
+    font-family: $worksans-font;
+    font-weight: $font-regular;
+    font-size: 20px;
+    color: #000;
+  }
+}
+
+.project_card_wrapper {
+  margin-top: 82px !important;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  gap: 55px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .project_card {
+    width: 570px;
+    max-height: 334.54px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    background-color: transparent;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    img {
+      width: 103%;
+      height: 103%;
+      display: flex;
+      object-fit: cover;
+    }
+  }
+}
+
+.btn {
+  display: block;
+  margin: 64px auto 0 auto;
+  width: 170px;
+  height: 48px;
+  border: none;
+  border-radius: 5px;
+  background-color: $dark-100;
+  color: $white-100;
+  font-family: $worksans-font;
+  font-weight: $font-bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .project_main {
+    padding-top: 104px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .title_box {
+    width: 90%;
+    max-width: 401px;
+    height: auto;
+
+    .top_title {
+      font-size: 16px;
+    }
+
+    h2 {
+      margin-top: 8px;
+      font-size: 34px;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #000;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<section class="project_main">
+    <div class="title_box">
+        <p class="top_title">Works</p>
+        <h2>Portfolio</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+
+    <ul class="project_card_wrapper">
+        <li class="project_card" *ngFor="let data of projectarr">
+            <img [src]="data" loading="lazy" alt="website banner">
+        </li>
+    </ul>
+    
+    <button class="btn">Learn More</button>
+
+    
+</section>
