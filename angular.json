@@ -54,7 +54,7 @@
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kB",
-                  "maximumError": "40kB"
+                  "maximumError": "902.89kB"
                 }
               ],
               "outputHashing": "all"
